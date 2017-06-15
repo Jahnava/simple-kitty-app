@@ -1,0 +1,13 @@
+.red-text {
+  color: red;
+  font-family: lobster;
+}
+
+.blue-text {
+  color:blue;
+}
+
+p {
+  font-size: 20px;
+  font-family: monospace;
+}
