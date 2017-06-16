@@ -1,6 +1,11 @@
+body {
+
+  margin: auto;
+}
 .red-text {
   color: red;
   font-family: lobster;
+
 }
 
 .blue-text {
