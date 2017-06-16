@@ -11,3 +11,16 @@ p {
   font-size: 20px;
   font-family: monospace;
 }
+
+.smaller-image {
+  width: 300px;
+}
+
+.thick-orange-border {
+  border-width: 10px;
+  border-color: orange;
+  border-style: solid;
+  /*makes image circular*/
+  border-radius: 50%;
+
+}
