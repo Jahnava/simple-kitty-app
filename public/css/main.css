@@ -29,3 +29,18 @@ p {
   border-radius: 50%;
 
 }
+
+.pink-background {
+  background-color: pink;
+}
+
+.yellow-background{
+  background-color: yellow;
+}
+
+#cat-photo-form {
+  border-width: thin;
+  border-color: green;
+  border-style: double;
+
+}

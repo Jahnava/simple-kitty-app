@@ -7,43 +7,52 @@
     <title>Kitty App</title>
   </head>
   <body>
-    <h1 class='red-text'>Kitty App</h1>
-    <a href="#"><img class="smaller-image thick-orange-border" src="http://i.imgur.com/IG2jEpW.gif" alt="kitties!"></a>
-    <p>
-      Click here for <a href="https://www.youtube.com/watch?v=Qit3ALTelOo">The Mean Kitty Song!</a>
-    </p>
-    <p class='blue-text'>
-       Gus is the cat at the theater door
-        His name, as I ought to have told you before
-        Is really Asparagus, but that's such a fuss to pronounce
-        That we usually call him just <a href="https://www.google.com/search?q=cat+song+lyrics&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwj7w7CWgcHUAhUJyWMKHSVIB50Q_AUIBygC&biw=1280&bih=590#tbm=isch&q=gus+the+cat&imgrc=ly25jfEPcqSsCM:">Gus</a>.</p>
+    <div class= "pink-background">
+      <h1 class='red-text'>Kitty App</h1>
+    </div>
+    <div class="yellow-background">
+      <a href="#"><img class="smaller-image thick-orange-border" src="http://i.imgur.com/IG2jEpW.gif" alt="kitties!"></a>
+    </div>
+    <div class= "pink-background">
+      <p>Click here for <a href="https://www.youtube.com/watch?v=Qit3ALTelOo">The Mean Kitty Song!</a></p>
+    </div>
+    <div class="yellow-background">
+      <p class='blue-text'>
+         Gus is the cat at the theater door
+          His name, as I ought to have told you before
+          Is really Asparagus, but that's such a fuss to pronounce
+          That we usually call him just <a href="https://www.google.com/search?q=cat+song+lyrics&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwj7w7CWgcHUAhUJyWMKHSVIB50Q_AUIBygC&biw=1280&bih=590#tbm=isch&q=gus+the+cat&imgrc=ly25jfEPcqSsCM:">Gus</a>.</p>
+    </div>
+    <div class= "pink-background">
+      <h4 class='red-text'>Things That Cats Love</h4>
+         <ul>
+           <li>milk</li>
+           <li>cat nip</li>
+           <li>toys</li>
+           <li>sleeping</li>
+           <li>getting rubs</li>
+         </ul>
+    </div>
+    <div class="yellow-background">
+      <h4 class='red-text'>Things That Cats Hate</h4>
+         <ol>
+           <li>getting wet</li>
+           <li>getting thrown</li>
+           <li>being lost</li>
+          </ol>
+    </div>
+    <div id="cat-photo-form" class= "pink-background">
+        <form id="cat-photo-form" action="/submit cat photo">
+          <label><input type="radio" name="indoor-outdoor">Indoor</label>
+          <label><input type="radio" name="indoor-outdoor">Outdoor</label>
+           <label><input type="checkbox" name="personality">Spunky</label>
+           <label><input type="checkbox" name="personality">Snuggly</label>
+           <label><input type="checkbox" name="personality">Frisky</label>
+           <label><input type="checkbox" name="personality">Feisty</label>
+            <input type="text" placeholder="cat photo URL" required>
+           <button type="submit">Submit</button>
+        </form>
+    </div>
 
-<h4 class='red-text'>Things That Cats Love</h4>
-   <ul>
-     <li>milk</li>
-     <li>cat nip</li>
-     <li>toys</li>
-     <li>sleeping</li>
-     <li>getting rubs</li>
-   </ul>
-
-<h4 class='red-text'>Things That Cats Hate</h4>
-   <ol>
-     <li>getting wet</li>
-     <li>getting thrown</li>
-     <li>being lost</li>
-   </ol>
-<form action="/submit cat photo">
-  <label><input type="radio" name="indoor-outdoor">Indoor</label>
-  <label><input type="radio" name="indoor-outdoor">Outdoor</label>
-   <label><input type="checkbox" name="personality">Spunky</label>
-   <label><input type="checkbox" name="personality">Snuggly</label>
-   <label><input type="checkbox" name="personality">Frisky</label>
-   <label><input type="checkbox" name="personality">Feisty</label>
-    <input type="text" placeholder="cat photo URL" required>
-   <button type="submit">Submit</button>
-</form>
-
-
-<script src="/js/app.js" charset="utf-8"></script>
-  </body>
+        <script src="/js/app.js" charset="utf-8"></script>
+          </body>
