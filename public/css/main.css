@@ -23,7 +23,7 @@ p {
 
 .thick-orange-border {
   border-width: 10px;
-  border-color: orange;
+  border-color: #FFA500;
   border-style: solid;
   /*makes image circular*/
   border-radius: 50%;
@@ -54,7 +54,8 @@ p {
 
  .box {
    border-style: solid;
-   border-color: black;
+   /*rgb stands for red,green, blue and it sets the specific amout of each color*/
+   border-color: rgb(0,0,0);
    border-width: 5px;
    text-align: center;
  }
@@ -65,17 +66,42 @@ p {
  }
 
  .red-box {
-   background-color: red;
+   background-color: #F00;
    padding: 20px;
    margin: 20px;
  }
 
  .green-box {
-   background-color: green;
+   background-color: #0F0;
    padding: 20px;
    margin: 20px;
  }
 
  #next-page-button {
    margin: 30px 0px 30px 0px;
+ }
+
+ .pink-text {
+   color: pink !important;
+ }
+
+ #orange-text {
+   color: orange;
+ }
+
+ h4 {
+   color:purple;
+ }
+
+ .red-text {
+   color: rbg(0, 0, 225);
+ }
+ .orchid-text {
+   color: orchid;
+ }
+ .sienna-text {
+   color: #a0522d;
+ }
+ .blue-text {
+   color: rbg(0,0,255);
  }
