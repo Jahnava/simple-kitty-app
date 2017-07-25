@@ -10,97 +10,80 @@
     <title>Kitty App</title>
   </head>
   <body>
-    <div class="container-fluid">
-    <button class='btn btn-primary'><i class="fa fa-thumbs-up">Like</i>
-   </button>
-   <i class="fa fa-camera-retro fa-5x"></i>
-    <div class= "pink-background">
-      <h1 class='red-text text-center'>Kitty App</h1>
-    </div>
-    <div class="yellow-background">
-      <a href="#"><img class="image-responsive thick-orange-border" src="http://i.imgur.com/IG2jEpW.gif" alt="kitties!"></a>
-    </div>
-    <img class='img-responsive' src="https://www.faziarizvi.net/tea/wp-content/uploads/2010/10/kitties-in-teamugs.jpg" alt="more kitties">
-    <div class='row'>
-      <div class=col-xs-8>
-        <button class='btn btn-block btn-info'><i class="fa fa-info-circle><">Info</button>
-      </div>
-      <div class='col-xs-8'>
-        <button class='btn btn-block btn-danger'><i class='fa fa-trash'></i>Delete</button>
-      </div>
-      <div class='col-xs-8'>
-        <button class='btn btn-block btn-primary'>Button</button>
-      </div>
-    </div>
-    <div class= "pink-background">
-      <p>Click here for <a href="https://www.youtube.com/watch?v=Qit3ALTelOo">The Mean Kitty Song!</a></p>
-    </div>
-    <div class="yellow-background">
-      <p class='text-primary'>
-         Gus is the <span class='text-danger'> cat</span> at the theater door
-          His name, as I ought to have told you before
-          Is really Asparagus, but that's such a fuss to pronounce
-          That we usually call him just <a href="https://www.google.com/search?q=cat+song+lyrics&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwj7w7CWgcHUAhUJyWMKHSVIB50Q_AUIBygC&biw=1280&bih=590#tbm=isch&q=gus+the+cat&imgrc=ly25jfEPcqSsCM:">Gus</a>.</p>
-    </div>
-    <div class= "pink-background">
-      <h4 class='red-text'>Things That Cats Love</h4>
-         <ul>
-           <li>milk</li>
-           <li>cat nip</li>
-           <li>toys</li>
-           <li>sleeping</li>
-           <li>getting rubs</li>
-         </ul>
-    </div>
-    <div class="yellow-background">
-      <h4 class='red-text'>Things That Cats Hate</h4>
-         <ol>
-           <li>getting wet</li>
-           <li>getting thrown</li>
-           <li>being lost</li>
-          </ol>
-    </div>
-    <div id="cat-photo-form" class= "pink-background">
-        <form id="cat-photo-form" action="/submit cat photo">
-          <div class='row'>
-            <div class='col-xs-4'>
-          <label><input type="radio" name="indoor-outdoor">Indoor</label>
-          </div>
-          <div class='col-xs-4'>
-          <label><input type="radio" name="indoor-outdoor">Outdoor</label>
-          </div>
-          </div>
-           <label><input type="checkbox" name="personality">Spunky</label>
-           <label><input type="checkbox" name="personality">Snuggly</label>
-           <label><input type="checkbox" name="personality">Frisky</label>
-           <label><input type="checkbox" name="personality">Feisty</label>
-            <input type="text" placeholder="cat photo URL" required>
-           <button type="submit">Submit</button>
-        </form>
-    </div>
 
 
-<form id ='next-page-button'>
-<input type="button" value="Click Here" onclick="window.location.href='/html/page2.html'" />
-</form>
+  <style>
+    h2 {
+      font-family: Lobster, Monospace;
+    }
 
-  <!-- random next buttons -->
-<div class="panel-footer row">
-    <div class="col-xs-6 text-left">
-        <div class="previous">
-          <button type="button" class="btn btn-default btn-lg">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-          </button>
+    .thick-green-border {
+      border-color: green;
+      border-width: 10px;
+      border-style: solid;
+      border-radius: 50%;
+    }
+
+  </style>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-8">
+        <h2 class="text-primary text-center">CatPhotoApp</h2>
+      </div>
+      <div class="col-xs-4">
+        <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
+      </div>
+    </div>
+    <img src="https://bit.ly/fcc-running-cats" class="img-responsive" alt="Three kittens running towards the camera. ">
+    <div class="row">
+      <div class="col-xs-4">
+        <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+      </div>
+      <div class="col-xs-4">
+        <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+      </div>
+      <div class="col-xs-4">
+        <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+      </div>
+    </div>
+    <p>Things cats <span class="text-danger">love:</span></p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+    <form action="/submit-cat-photo">
+      <div class="row">
+        <div class="col-xs-6">
+          <label><input type="radio" name="indoor-outdoor"> Indoor</label>
         </div>
-    </div>
-    <div class="col-xs-6 text-right">
-        <div class="next">
-          <button type="button" class="btn btn-default btn-lg">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-          </button>
+        <div class="col-xs-6">
+          <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
         </div>
-    </div>
-</div><!-- end random next buttons -->
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <label><input type="checkbox" name="personality"> Loving</label>
+        </div>
+        <div class="col-xs-4">
+          <label><input type="checkbox" name="personality"> Lazy</label>
+        </div>
+        <div class="col-xs-4">
+          <label><input type="checkbox" name="personality"> Crazy</label>
+        </div>
+      </div>
+      <input type="text" class="form-control" placeholder="cat photo URL" required>
+      <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+    </form>
+  </div>
+
 
     <script src="/js/app.js" charset="utf-8"></script>
 </body>

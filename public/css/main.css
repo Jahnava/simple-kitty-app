@@ -1,107 +1,11 @@
-body {
 
-  margin: auto;
-}
-.red-text {
-  color: red;
-  font-family: lobster;
+  h2 {
+    font-family: Lobster, Monospace;
+  }
 
-}
-
-.blue-text {
-  color:blue;
-}
-
-p {
-  font-size: 20px;
-  font-family: monospace;
-}
-
-.smaller-image {
-  width: 300px;
-}
-
-.thick-orange-border {
-  border-width: 10px;
-  border-color: #FFA500;
-  border-style: solid;
-  /*makes image circular*/
-  border-radius: 50%;
-
-}
-
-.pink-background {
-  background-color: pink;
-}
-
-.yellow-background{
-  background-color: yellow;
-}
-
-#cat-photo-form {
-  border-width: thin;
-  border-color: green;
-  border-style: double;
-
-}
-
-/*boxes section*/
-
-.injected-text {
-   margin-bottom: -25px;
-   text-align: center;
- }
-
- .box {
-   border-style: solid;
-   /*rgb stands for red,green, blue and it sets the specific amout of each color*/
-   border-color: rgb(0,0,0);
-   border-width: 5px;
-   text-align: center;
- }
-
- .yellow-box {
-   background-color: yellow;
-   padding: 10px;
- }
-
- .red-box {
-   background-color: #F00;
-   padding: 20px;
-   margin: 20px;
- }
-
- .green-box {
-   background-color: #0F0;
-   padding: 20px;
-   margin: 20px;
- }
-
- #next-page-button {
-   margin: 30px 0px 30px 0px;
- }
-
- .pink-text {
-   color: pink !important;
- }
-
- #orange-text {
-   color: orange;
- }
-
- h4 {
-   color:purple;
- }
-
- .red-text {
-   color: rbg(0, 0, 225);
- }
- .orchid-text {
-   color: orchid;
- }
- .sienna-text {
-   color: #a0522d;
- }
- .blue-text {
-   color: rbg(0,0,255);
- }
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
